@@ -1,0 +1,34 @@
+App structure
+-------------
+
+src
+1.actions
+-api.js (handle all http request)
+-dCandidate.js(Redux actions & action creators)
+-stroe.js(configure redux store)
+
+2.Components
+-DCandidateForm.js (form operations)
+-DCandidate.js(list of records)
+-useForm.js(handles common form operations)
+
+3.Reducers
+-dCandidate.handles
+-index.js
+
+App.js
+index.js
+index.css
+
+----------------
+
+packages required
+1.redux
+2.react-redux
+3.redux-thunk
+
+action - create,update,delete etc, data
+reducers - action object is passed to the reducer
+store - reducers passes the data to Store
+
+cmpnt->dispatch(action)->reducer->cmpnt
